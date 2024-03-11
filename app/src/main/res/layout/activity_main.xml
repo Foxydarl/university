@@ -14,7 +14,7 @@
         android:layout_width="219dp"
         android:layout_height="66dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="ABAI IIO"
+        android:text="@string/ColName"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="50sp"
