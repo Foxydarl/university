@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">university</string>
+    <string name="ColName">ABAI II0</string>
+    <string name="search">Поиск по ABAI IIO</string>
+    <string name="logo">Лого</string>
+    <string name="clubs">Клубы</string>
+    <string name="gid">Гид</string>
+    <string name="service">Сервисы</string>
+    <string name="main">Главная</string>
+    <string name="linse">Линза</string>
 </resources>

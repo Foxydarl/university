@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainList">
+
+    <EditText
+        android:id="@+id/Search"
+        android:layout_width="364dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="613dp"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:inputType="text"
+        android:shadowColor="#0C0C0C"
+        android:text="@string/search"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/Logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/linse"
+        android:layout_width="21dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:contentDescription="@string/linse"
+        app:layout_constraintBottom_toBottomOf="@+id/Search"
+        app:layout_constraintStart_toStartOf="@+id/Search"
+        app:layout_constraintTop_toTopOf="@+id/Search"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lens" />
+
+    <View
+        android:id="@+id/SearchUnderline"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="593dp"
+        android:background="@color/thirdpurple"
+        app:layout_constraintBottom_toTopOf="@+id/CircleBelowLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Search" />
+
+    <View
+        android:id="@+id/BottomRectangle"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/CircleBelowLogo"
+        android:layout_width="91dp"
+        android:layout_height="89dp"
+
+        android:background="@drawable/rounded_corner2"
+        app:layout_constraintBottom_toBottomOf="@+id/BottomRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SearchUnderline" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="83dp"
+        android:layout_height="76dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/BottomRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Search"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/GidImage"
+        android:layout_width="34.5dp"
+        android:layout_height="31dp"
+        android:contentDescription="@string/gid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/BottomRectangle"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="@+id/CircleBelowLogo"
+        app:layout_constraintTop_toTopOf="@+id/CircleBelowLogo"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/gid" />
+
+    <ImageView
+        android:id="@+id/ServiceImage"
+        android:layout_width="29dp"
+        android:layout_height="26dp"
+        android:contentDescription="@string/service"
+        android:translationX="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/BottomRectangle"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toEndOf="@+id/GidImage"
+        app:layout_constraintTop_toTopOf="@+id/Logo"
+        app:srcCompat="@drawable/service" />
+
+    <TextView
+        android:id="@+id/GidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/overpass_mono_light"
+        android:text="@string/gid"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="@+id/Logo"
+        app:layout_constraintTop_toBottomOf="@+id/GidImage" />
+
+    <TextView
+        android:id="@+id/ServiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/overpass_mono_light"
+        android:text="@string/service"
+        android:textColor="@color/white"
+        android:translationX="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/GidText"
+        app:layout_constraintTop_toBottomOf="@+id/ServiceImage"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <ImageView
+        android:id="@+id/ClubsImage"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:contentDescription="@string/clubs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/GidImage"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="@+id/BottomRectangle"
+        app:layout_constraintTop_toTopOf="@+id/CircleBelowLogo"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/clubs" />
+
+    <ImageView
+        android:id="@+id/MainImage"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:contentDescription="@string/main"
+        app:layout_constraintBottom_toBottomOf="@+id/BottomRectangle"
+        app:layout_constraintEnd_toStartOf="@+id/ClubsImage"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Logo"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/main" />
+
+    <TextView
+        android:id="@+id/ClubsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clubs"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ClubsImage"
+        app:layout_constraintStart_toStartOf="@+id/ClubsImage"
+        app:layout_constraintTop_toBottomOf="@+id/ClubsImage" />
+
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/MainImage"
+        app:layout_constraintStart_toStartOf="@+id/MainImage"
+        app:layout_constraintTop_toBottomOf="@+id/MainImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
