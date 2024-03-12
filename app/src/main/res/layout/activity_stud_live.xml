@@ -13,22 +13,9 @@
         android:layout_height="match_parent">
 
         <View
-            android:id="@+id/SearchUnderline"
-            android:layout_width="0dp"
-            android:layout_height="2dp"
-            android:layout_marginBottom="593dp"
-            android:background="@color/thirdpurple"
-            app:layout_constraintBottom_toTopOf="@+id/CircleBelowLogo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Search" />
-
-        <View
             android:id="@+id/BottomRectangle"
             android:layout_width="411dp"
             android:layout_height="92dp"
-            android:layout_marginBottom="300dp"
             android:background="@color/purple"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
