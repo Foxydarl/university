@@ -7,6 +7,7 @@
     android:background="@color/gray"
     tools:context=".MainList">
 
+
     <EditText
         android:id="@+id/Search"
         android:layout_width="343dp"
