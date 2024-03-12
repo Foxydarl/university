@@ -9,4 +9,5 @@
     <color name="mediumpurple">#5C4899</color>
     <color name="secpurple">#3F2B7B</color>
     <color name="thirdpurple">#331C7240</color>
+    <color name="transparent">00FFFFFF</color>
 </resources>
