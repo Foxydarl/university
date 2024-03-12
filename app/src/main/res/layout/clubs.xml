@@ -8,9 +8,80 @@
     tools:context=".stud_live"
     android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="84dp"
+        android:layout_height="67dp"
+        android:translationX="30dp"
+        app:srcCompat="@drawable/kaflogo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/StudliveBut"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/BottomRectangle"
+            app:layout_constraintEnd_toEndOf="@+id/BottomRectangle"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/BottomRectangle" />
+
+        <Button
+            android:id="@+id/GidBut"
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/BottomRectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintStart_toStartOf="@+id/BottomRectangle"
+            app:layout_constraintTop_toTopOf="@+id/Logo"
+            app:layout_constraintVertical_bias="0.549" />
+
+        <Button
+            android:id="@+id/ClubBut"
+            android:layout_width="35dp"
+            android:layout_height="31dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/BottomRectangle"
+            app:layout_constraintEnd_toEndOf="@+id/BottomRectangle"
+            app:layout_constraintHorizontal_bias="0.268"
+            app:layout_constraintStart_toStartOf="@+id/BottomRectangle"
+            app:layout_constraintTop_toTopOf="@+id/Logo"
+            app:layout_constraintVertical_bias="0.541" />
+
+        <Button
+            android:id="@+id/MainBut"
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="@+id/BottomRectangle"
+            app:layout_constraintEnd_toEndOf="@+id/BottomRectangle"
+            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintStart_toStartOf="@+id/BottomRectangle"
+            app:layout_constraintTop_toTopOf="@+id/Logo"
+            app:layout_constraintVertical_bias="0.493" />
+
+        <Button
+            android:id="@+id/ServiceBut"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/BottomRectangle"
+            app:layout_constraintHorizontal_bias="0.931"
+            app:layout_constraintStart_toStartOf="@+id/BottomRectangle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.954" />
 
         <View
             android:id="@+id/BottomRectangle"
