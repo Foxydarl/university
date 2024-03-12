@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/Search"
-        android:layout_width="364dp"
-        android:layout_height="29dp"
+        android:layout_width="338dp"
+        android:layout_height="38dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="text"
